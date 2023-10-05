@@ -27,7 +27,7 @@ export default function Home() {
           height={200}
           priority
         />
-        <p>Hello, my name is Michael!</p>
+        <p className={styles.overlayText}>Hello, my name is Michael!</p>
       </div>
 
       <div className={styles.grid}>

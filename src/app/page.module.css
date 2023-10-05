@@ -7,33 +7,6 @@
   /* min-height: 100vh; */
 }
 
-.description {
-  display: inherit;
-  justify-content: inherit;
-  align-items: inherit;
-  font-size: 0.85rem;
-  max-width: var(--max-width);
-  width: 100%;
-  z-index: 2;
-  font-family: var(--font-mono);
-}
-
-.description a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.description p {
-  position: relative;
-  margin: 0;
-  padding: 1rem;
-  background-color: rgba(var(--callout-rgb), 0.5);
-  border: 1px solid rgba(var(--callout-border-rgb), 0.3);
-  border-radius: var(--border-radius);
-}
-
 .code {
   font-weight: 700;
   font-family: var(--font-mono);
@@ -69,7 +42,7 @@
   -webkit-user-select: none;
   touch-action: manipulation;
   vertical-align: middle;
-  width: 100px;
+  width: 50px;
 }
 
 .button-13:hover {
@@ -143,6 +116,33 @@
 .headshot {
   position: relative;
   border-radius: 50%;
+  overflow: hidden;
+}
+
+.overlay-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7); /* Background color with transparency */
+  color: white; /* Text color */
+  padding: 10px; /* Adjust padding as needed */
+  opacity: 0.8; /* Text opacity */
+  text-align: center; /* Center the text */
+  box-sizing: border-box;
+}
+
+.overlay-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7); /* Background color with transparency */
+  color: white; /* Text color */
+  padding: 10px; /* Adjust padding as needed */
+  opacity: 0.8; /* Text opacity */
+  text-align: center; /* Center the text */
+  box-sizing: border-box;
 }
 
 /* Enable hover only on non-touch devices */
