@@ -62,7 +62,7 @@ export default function Home() {
       </div>
 
       <div className={styles.grid}>
-        <div className={styles.content}>
+        <div>
           {activeComponent === "portfolio" && <PortfolioComponent />}
           {activeComponent === "podcasts" && <PodcastsComponent />}
           {activeComponent === "illorim" && <IllorimComponent />}

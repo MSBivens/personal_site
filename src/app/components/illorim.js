@@ -26,18 +26,16 @@ const IllorimComponent = () => {
   ];
 
   return (
-    <div>
-      {/* Render squares using the imported images */}
-      <div className="squares-container">
-        {squaresContent.map((content, index) => (
+    <div className={styles.grid}>
+      {squaresContent.map((content, index) => (
+        <div className={styles.column} key={index}>
           <a
-            key={index}
             href={content.link}
             target="_blank"
             rel="noopener noreferrer"
-            className="square"
+            className={styles.square}
           >
-            <div className="square-content">
+            <div className={styles.squareContent}>
               <Image
                 src={content.image}
                 alt={`Image for ${content.title}`}
@@ -49,8 +47,8 @@ const IllorimComponent = () => {
               <span>{content.title}</span>
             </div>
           </a>
-        ))}
-      </div>
+        </div>
+      ))}
     </div>
   );
 };
