@@ -29,46 +29,6 @@ export default function Home() {
         />
         <p className={styles.overlayText}>Hello, my name is Michael!</p>
       </div>
-
-      <div className={styles.grid}>
-        <button
-          class="button-13"
-          role="button"
-          onClick={() => handleButtonClick("portfolio")}
-        >
-          Code Portfolio
-        </button>
-        <button
-          class="button-13"
-          role="button"
-          onClick={() => handleButtonClick("podcasts")}
-        >
-          Podcasts
-        </button>
-        <button
-          class="button-13"
-          role="button"
-          onClick={() => handleButtonClick("illorim")}
-        >
-          Illorim
-        </button>
-        <button
-          class="button-13"
-          role="button"
-          onClick={() => handleButtonClick("otherProjects")}
-        >
-          Other Projects
-        </button>
-      </div>
-
-      <div className={styles.grid}>
-        <div>
-          {activeComponent === "portfolio" && <PortfolioComponent />}
-          {activeComponent === "podcasts" && <PodcastsComponent />}
-          {activeComponent === "illorim" && <IllorimComponent />}
-          {activeComponent === "otherProjects" && <OtherProjectsComponent />}
-        </div>
-      </div>
     </main>
   );
 }
